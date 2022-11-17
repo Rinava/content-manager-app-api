@@ -13,10 +13,12 @@ app.use(express.json());
 app.get('/', (req, res) => {
   res.send('Hello World!');
 });
+
 app.get('/api/resources', (req, res) => {
   const resources = getResources();
   res.send(resources);
 });
+
 app.post('/api/resources', (req, res) => {
   const resources = getResources();
   const newResource = req.body;
@@ -35,6 +37,13 @@ app.post('/api/resources', (req, res) => {
       message: 'Resource added',
     });
   });
+});
+
+app.get('/api/resources/:id', (req, res) => {
+  const resources = getResources();
+  const { id } = req.params;
+  const resource = resources.find((resource) => resource.id === id);
+  res.send(resource);
 });
 
 app.listen(PORT, () => {
