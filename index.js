@@ -22,11 +22,13 @@ app.get('/api/resources', (req, res) => {
 app.post('/api/resources', (req, res) => {
   const resources = getResources();
   const newResource = req.body;
-  newResource.createdAt = new Date();
+  newResource.createdAt = new Date().toLocaleString('en-GB', {
+    timeStyle: 'short',
+    dateStyle: 'long',
+  });
   newResource.status = 'inactive';
   newResource.id = uuidv4();
   resources.push(newResource);
-
   fs.writeFileSync(pathToFile, JSON.stringify(resources, null, 2), (error) => {
     if (error) {
       return res
@@ -43,6 +45,7 @@ app.get('/api/resources/:id', (req, res) => {
   const resources = getResources();
   const { id } = req.params;
   const resource = resources.find((resource) => resource.id === id);
+  console.log(resource);
   res.send(resource);
 });
 

@@ -1,45 +1,152 @@
 [
   {
-    "id": 1,
-    "title": "Learning Language",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat.",
-    "image": "https://via.placeholder.com/300x200",
-    "imageDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat.",
-    "link": "google.com",
-    "priority": 1,
-    "timeToFinish": 120,
-    "active": true
-  },
-  {
-    "id": 2,
-    "title": "Excercise",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat.",
-    "image": "https://via.placeholder.com/300x200",
-    "imageDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat.",
-    "link": "google.com",
-    "priority": 2,
-    "timeToFinish": 320,
-    "active": false
-  },
-  {
-    "id": 3,
-    "title": "Excercise2",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat.",
-    "image": "https://via.placeholder.com/300x200",
-    "imageDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat.",
-    "link": "google.com",
-    "priority": 3,
-    "timeToFinish": 320,
-    "active": false
-  },
-  {
-    "title": "Sacar al Feli",
-    "description": "Es un gato pero bueno",
-    "link": "",
-    "priority": "3",
-    "timeToFinish": "00:25",
-    "createdAt": "2022-11-17T16:07:47.129Z",
+    "title": "Study for math",
+    "description": "X + Y = 39\nX - 5Y = 1",
+    "link": "www.youtube.com",
+    "priority": "High",
+    "timeToFinish": "12:20",
+    "createdAt": "24 November 2022 at 12:08",
     "status": "inactive",
-    "id": "a3730636-9a2a-4344-be64-a3be7599dde6"
+    "id": "37fd5b48-25a9-4cb0-9645-87404554e033"
+  },
+  {
+    "title": "Take out the garbage",
+    "description": "",
+    "link": "",
+    "priority": "Medium",
+    "timeToFinish": "00:05",
+    "createdAt": "24 November 2022 at 12:08",
+    "status": "inactive",
+    "id": "0f0d45d0-1681-44bf-91ef-a4141ae3f792"
+  },
+  {
+    "title": "Hug the cat and read him the Poem",
+    "description": "Los amantes fervientes, los sabios venerables,\nSienten, cuando maduros, igual predilección\nPor los gatos, orgullo de la casa, que son\nComo ellos sedentarios y al frío vulnerables.\n\nAmigos de la ciencia y la sensualidad,\nPrefieren el silencio y las tinieblas crueles.\nDel Erebo serían los fúnebres corceles\nSi su altivez cediese ante la majestad.\n\nCuando sueñan, adoptan las nobles actitudes\nDe las grandes esfinges que en vastas latitudes\nSolitarias se pierden en un sueño inmutable.\n\nMágicas chispas arden en sus grupas tranquilas\nY partículas de oro, como arena impalpable,\nAlumbran vagamente sus místicas pupilas.\n\nOda al gato\nPablo Neruda\nLos animales fueron\nimperfectos,\nlargos de cola, tristes\nde cabeza.\nPoco a poco se fueron\ncomponiendo,\nhaciéndose paisaje,\nadquiriendo lunares, gracia, vuelo.\nEl gato,\nsólo el gato\napareció completo\ny orgulloso:\nnació completamente terminado,\ncamina solo y sabe lo que quiere.\n\nEl hombre quiere ser pescado y pájaro,\nla serpiente quisiera tener alas,\nel perro es un león desorientado,\nel ingeniero quiere ser poeta,\nla mosca estudia para golondrina,\nel poeta trata de imitar la mosca,\npero el gato\nquiere ser sólo gato\ny todo gato es gato\ndesde bigote a cola,\ndesde presentimiento a rata viva,\ndesde la noche hasta sus ojos de oro.\n\nNo hay unidad\ncomo él,\nno tienen\nla luna ni la flor\ntal contextura:\nes una sola cosa\ncomo el sol o el topacio,\ny la elástica línea en su contorno\nfirme y sutil es como\nla línea de la proa de una nave.\nSus ojos amarillos\ndejaron una sola\nranura\npara echar las monedas de la noche.\n\nOh pequeño\nemperador sin orbe,\nconquistador sin patria,\nmínimo tigre de salón, nupcial\nsultán del cielo\nde las tejas eróticas,\nel viento del amor\nen la intemperie\nreclamas\ncuando pasas\ny posas\ncuatro pies delicados\nen el suelo,\noliendo,\ndesconfiando\nde todo lo terrestre,\nporque todo\nes inmundo\npara el inmaculado pie del gato.\n\nOh fiera independiente\nde la casa, arrogante\nvestigio de la noche,\nperezoso, gimnástico\ny ajeno,\nprofundísimo gato,\npolicía secreta\nde las habitaciones,\ninsignia\nde un\ndesaparecido terciopelo,\nseguramente no hay\nenigma\nen tu manera,\ntal vez no eres misterio,\ntodo el mundo te sabe y perteneces\nal habitante menos misterioso,\ntal vez todos lo creen,\ntodos se creen dueños,\npropietarios, tíos\nde gatos, compañeros,\ncolegas,\ndiscípulos o amigos\nde su gato.\n\nYo no.\nYo no suscribo.\nYo no conozco al gato.\nTodo lo sé, la vida y su archipiélago,\nel mar y la ciudad incalculable,\nla botánica,\nel gineceo con sus extravíos,\nel por y el menos de la matemática,\nlos embudos volcánicos del mundo,\nla cáscara irreal del cocodrilo,\nla bondad ignorada del bombero,\nel atavismo azul del sacerdote,\npero no puedo descifrar un gato.\nMi razón resbaló en su indiferencia,\nsus ojos tienen números de oro.",
+    "link": "",
+    "priority": "High",
+    "timeToFinish": "00:20",
+    "createdAt": "24 November 2022 at 12:08",
+    "status": "inactive",
+    "id": "e6d3c387-8b32-40b4-9781-072ba8cf3399"
+  },
+  {
+    "title": "See the youtube video",
+    "description": "Any video, that one! yes yes that one, your favorite,\nthats a great one! i love it ",
+    "link": "www.youtube.com",
+    "priority": "Medium",
+    "timeToFinish": "03:02",
+    "createdAt": "24 November 2022 at 12:08",
+    "status": "inactive",
+    "id": "d9828f75-aad3-46c9-8277-9e2d96627ba8"
+  },
+  {
+    "title": "Clean the dishes",
+    "description": "Puaj!",
+    "link": "",
+    "priority": "Low",
+    "timeToFinish": "00:20",
+    "createdAt": "24 November 2022 at 12:08",
+    "status": "inactive",
+    "id": "148ecf86-0e6d-4e56-85f2-9fe7f87f8f6b"
+  },
+  {
+    "title": "Make dinner",
+    "description": "Maybe pasta.\n\n\n\n\n\n\n\n\n\nMaybe no.",
+    "link": "",
+    "priority": "Low",
+    "timeToFinish": "00:20",
+    "createdAt": "24 November 2022 at 12:08",
+    "status": "inactive",
+    "id": "d46a72d5-c8f7-40db-a545-a42341fd88d9"
+  },
+  {
+    "title": "Eat the pasta",
+    "description": "",
+    "link": "",
+    "priority": "Low",
+    "timeToFinish": "00:20",
+    "createdAt": "24 November 2022 at 12:08",
+    "status": "inactive",
+    "id": "eb9450fa-d94a-4436-8fe1-94615c81cc20"
+  },
+  {
+    "title": "Hug Pumi, the greatest dog ever, and most clever mom",
+    "description": "",
+    "link": "",
+    "priority": "Low",
+    "timeToFinish": "00:20",
+    "createdAt": "24 November 2022 at 12:08",
+    "status": "inactive",
+    "id": "ace5c1b6-6d38-4705-8771-529f2da91f14"
+  },
+  {
+    "title": "Program",
+    "description": "Do it, don't think",
+    "link": "",
+    "priority": "Medium",
+    "timeToFinish": "00:20",
+    "createdAt": "24 November 2022 at 12:08",
+    "status": "inactive",
+    "id": "9f4bd6ce-9a48-46e5-a133-6b8994ddd62e"
+  },
+  {
+    "title": "dsa",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis viverra, leo eu sodales rhoncus, magna lectus dignissim elit, ut sagittis quam diam in metus. Nam consectetur fringilla imperdiet. Aliquam erat volutpat. Vestibulum vitae tristique purus. Phasellus tristique cursus vehicula. In ac tincidunt lorem. Nam vel sem varius, condimentum est sed, lacinia felis. Suspendisse viverra tellus ut ipsum pellentesque tempus. Vivamus malesuada iaculis tellus, vitae scelerisque urna sollicitudin ac. Etiam vulputate eget velit ut laoreet. Vestibulum quam mauris, aliquam vel libero eget, imperdiet egestas nulla. In ut aliquet ex, at malesuada ligula. In vel mauris sodales, ultrices erat sed, ornare sapien. Maecenas porta maximus turpis nec efficitur. Suspendisse facilisis at dui sed tempor. Nulla fa",
+    "link": "",
+    "priority": "Low",
+    "timeToFinish": "00:20",
+    "createdAt": "24 November 2022 at 12:08",
+    "status": "inactive",
+    "id": "a05ab62d-d4bd-4183-a495-e1bc909d3726"
+  },
+  {
+    "title": "dsapiodsajoidasjoidjasoidjsaoidjsaijdoisajdoisajdiosajdoisajiodjsaiodjsaiodjiosa",
+    "description": "",
+    "link": "",
+    "priority": "Low",
+    "timeToFinish": "00:20",
+    "createdAt": "24 November 2022 at 12:08",
+    "status": "inactive",
+    "id": "ea330943-5f91-494b-8b31-15fc9577ca9d"
+  },
+  {
+    "title": "dsadsa",
+    "description": "",
+    "link": "",
+    "priority": "Low",
+    "timeToFinish": "00:20",
+    "createdAt": "2022-11-24T15:01:57.382Z",
+    "status": "inactive",
+    "id": "7cbfed3d-7d6d-444d-91df-4eda27e5eae4"
+  },
+  {
+    "title": "dsadsa",
+    "description": "",
+    "link": "",
+    "priority": "Low",
+    "timeToFinish": "00:20",
+    "createdAt": "24/11/2022, 12:02:45",
+    "status": "inactive",
+    "id": "5cfb82e9-16a0-4093-b9aa-2651b3cb8ebb"
+  },
+  {
+    "title": "dsadsa",
+    "description": "",
+    "link": "",
+    "priority": "Low",
+    "timeToFinish": "00:20",
+    "createdAt": "24 November 2022 at 12:08",
+    "status": "inactive",
+    "id": "798b72a1-e47e-460d-99fc-d930bc43e5ca"
+  },
+  {
+    "title": "weew",
+    "description": "",
+    "link": "",
+    "priority": "Low",
+    "timeToFinish": "00:20",
+    "createdAt": "24 November 2022 at 12:08",
+    "status": "inactive",
+    "id": "8b7526df-ac94-4501-ae99-a1f449b9eb20"
   }
 ]
