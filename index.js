@@ -26,8 +26,16 @@ app.post('/api/resources', (req, res) => {
     timeStyle: 'short',
     dateStyle: 'long',
   });
+  if (
+    !newResource.link.startsWith('http') ||
+    !newResource.link.startsWith('https')
+  ) {
+    newResource.link = 'http://' + newResource.link;
+  }
+
   newResource.status = 'inactive';
   newResource.id = uuidv4();
+
   resources.push(newResource);
   fs.writeFileSync(pathToFile, JSON.stringify(resources, null, 2), (error) => {
     if (error) {
@@ -45,7 +53,6 @@ app.get('/api/resources/:id', (req, res) => {
   const resources = getResources();
   const { id } = req.params;
   const resource = resources.find((resource) => resource.id === id);
-  console.log(resource);
   res.send(resource);
 });
 
