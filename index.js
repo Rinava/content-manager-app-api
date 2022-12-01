@@ -19,6 +19,13 @@ app.get('/api/resources', (req, res) => {
   res.send(resources);
 });
 
+app.get('/api/resources/:id', (req, res) => {
+  const resources = getResources();
+  const { id } = req.params;
+  const resource = resources.find((resource) => resource.id === id);
+  res.send(resource);
+});
+
 app.post('/api/resources', (req, res) => {
   const resources = getResources();
   const newResource = req.body;
@@ -27,8 +34,9 @@ app.post('/api/resources', (req, res) => {
     dateStyle: 'long',
   });
   if (
-    !newResource.link.startsWith('http') ||
-    !newResource.link.startsWith('https')
+    newResource.link.lenght > 0 &&
+    (!newResource.link.startsWith('http') ||
+      !newResource.link.startsWith('https'))
   ) {
     newResource.link = 'http://' + newResource.link;
   }
@@ -49,11 +57,47 @@ app.post('/api/resources', (req, res) => {
   });
 });
 
-app.get('/api/resources/:id', (req, res) => {
+app.put('/api/resources/:id', (req, res) => {
   const resources = getResources();
-  const { id } = req.params;
+  const id = req.params.id;
   const resource = resources.find((resource) => resource.id === id);
-  res.send(resource);
+  if (!resource) {
+    return res.status(404).send({ message: 'Resource not found' });
+  }
+  const updatedResource = req.body;
+  const index = resources.indexOf(resource);
+  resources[index] = updatedResource;
+  fs.writeFileSync(pathToFile, JSON.stringify(resources, null, 2), (error) => {
+    if (error) {
+      return res
+        .status(422)
+        .send({ message: 'Cannot update resource in the file' });
+    }
+    return res.send({
+      message: 'Resource updated',
+    });
+  });
+});
+
+app.delete('/api/resources/:id', (req, res) => {
+  const resources = getResources();
+  const id = req.params.id;
+  const resource = resources.find((resource) => resource.id === id);
+  if (!resource) {
+    return res.status(404).send({ message: 'Resource not found' });
+  }
+  const index = resources.indexOf(resource);
+  resources.splice(index, 1);
+  fs.writeFileSync(pathToFile, JSON.stringify(resources, null, 2), (error) => {
+    if (error) {
+      return res
+        .status(422)
+        .send({ message: 'Cannot delete resource in the file' });
+    }
+    return res.send({
+      message: 'Resource deleted',
+    });
+  });
 });
 
 app.listen(PORT, () => {
