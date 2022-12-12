@@ -22,8 +22,14 @@ app.get('/api/resources', (req, res) => {
 app.get('/api/resources/:id', (req, res) => {
   const resources = getResources();
   const { id } = req.params;
-  const resource = resources.find((resource) => resource.id === id);
-  res.send(resource);
+  const activeResource = resources.find((resource) => resource.id === id);
+  res.send(activeResource);
+});
+
+app.get('/api/active-resource', (req, res) => {
+  const resources = getResources();
+  const activeResource = resources.find((resource) => resource.active === true);
+  res.send(activeResource);
 });
 
 app.post('/api/resources', (req, res) => {
@@ -41,7 +47,7 @@ app.post('/api/resources', (req, res) => {
     newResource.link = 'http://' + newResource.link;
   }
 
-  newResource.status = 'inactive';
+  newResource.active = false;
   newResource.id = uuidv4();
 
   resources.push(newResource);
@@ -64,9 +70,24 @@ app.put('/api/resources/:id', (req, res) => {
   if (!resource) {
     return res.status(404).send({ message: 'Resource not found' });
   }
-  const updatedResource = req.body;
   const index = resources.indexOf(resource);
-  resources[index] = updatedResource;
+  if (req.body.active === true) {
+    const activeResource = resources.find(
+      (resource) => resource.active === true
+    );
+    if (activeResource) {
+      const activeIndex = resources.indexOf(activeResource);
+      resources[activeIndex] = { ...activeResource, active: false };
+    }
+    resources[index] = {
+      activeSince: new Date().toLocaleString('en-GB', {
+        timeStyle: 'short',
+        dateStyle: 'long',
+      }),
+    };
+  }
+
+  resources[index] = { ...resources[index], ...req.body };
   fs.writeFileSync(pathToFile, JSON.stringify(resources, null, 2), (error) => {
     if (error) {
       return res

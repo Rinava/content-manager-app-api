@@ -1,32 +1,35 @@
 [
   {
+    "activeSince": "12 December 2022 at 15:06",
     "title": "Study for Math",
     "description": "X + Y = 39\nX - 5Y = 1",
     "link": "www.youtube.com",
     "priority": "Low",
     "timeToFinish": "12:20",
     "createdAt": "24 November 2022 at 12:08",
-    "status": "inactive",
+    "active": false,
     "id": "37fd5b48-25a9-4cb0-9645-87404554e033"
   },
   {
+    "activeSince": "12 December 2022 at 15:06",
     "title": "Take out the garbage",
     "description": "",
     "link": "",
     "priority": "Medium",
     "timeToFinish": "00:05",
     "createdAt": "24 November 2022 at 12:08",
-    "status": "inactive",
+    "active": true,
     "id": "0f0d45d0-1681-44bf-91ef-a4141ae3f792"
   },
   {
+    "activeSince": "12 December 2022 at 14:18",
     "title": "Hug the cat and read him the Poem",
     "description": "Los amantes fervientes, los sabios venerables,\nSienten, cuando maduros, igual predilección\nPor los gatos, orgullo de la casa, que son\nComo ellos sedentarios y al frío vulnerables.\n\nAmigos de la ciencia y la sensualidad,\nPrefieren el silencio y las tinieblas crueles.\nDel Erebo serían los fúnebres corceles\nSi su altivez cediese ante la majestad.\n\nCuando sueñan, adoptan las nobles actitudes\nDe las grandes esfinges que en vastas latitudes\nSolitarias se pierden en un sueño inmutable.\n\nMágicas chispas arden en sus grupas tranquilas\nY partículas de oro, como arena impalpable,\nAlumbran vagamente sus místicas pupilas.\n\nOda al gato\nPablo Neruda\nLos animales fueron\nimperfectos,\nlargos de cola, tristes\nde cabeza.\nPoco a poco se fueron\ncomponiendo,\nhaciéndose paisaje,\nadquiriendo lunares, gracia, vuelo.\nEl gato,\nsólo el gato\napareció completo\ny orgulloso:\nnació completamente terminado,\ncamina solo y sabe lo que quiere.\n\nEl hombre quiere ser pescado y pájaro,\nla serpiente quisiera tener alas,\nel perro es un león desorientado,\nel ingeniero quiere ser poeta,\nla mosca estudia para golondrina,\nel poeta trata de imitar la mosca,\npero el gato\nquiere ser sólo gato\ny todo gato es gato\ndesde bigote a cola,\ndesde presentimiento a rata viva,\ndesde la noche hasta sus ojos de oro.\n\nNo hay unidad\ncomo él,\nno tienen\nla luna ni la flor\ntal contextura:\nes una sola cosa\ncomo el sol o el topacio,\ny la elástica línea en su contorno\nfirme y sutil es como\nla línea de la proa de una nave.\nSus ojos amarillos\ndejaron una sola\nranura\npara echar las monedas de la noche.\n\nOh pequeño\nemperador sin orbe,\nconquistador sin patria,\nmínimo tigre de salón, nupcial\nsultán del cielo\nde las tejas eróticas,\nel viento del amor\nen la intemperie\nreclamas\ncuando pasas\ny posas\ncuatro pies delicados\nen el suelo,\noliendo,\ndesconfiando\nde todo lo terrestre,\nporque todo\nes inmundo\npara el inmaculado pie del gato.\n\nOh fiera independiente\nde la casa, arrogante\nvestigio de la noche,\nperezoso, gimnástico\ny ajeno,\nprofundísimo gato,\npolicía secreta\nde las habitaciones,\ninsignia\nde un\ndesaparecido terciopelo,\nseguramente no hay\nenigma\nen tu manera,\ntal vez no eres misterio,\ntodo el mundo te sabe y perteneces\nal habitante menos misterioso,\ntal vez todos lo creen,\ntodos se creen dueños,\npropietarios, tíos\nde gatos, compañeros,\ncolegas,\ndiscípulos o amigos\nde su gato.\n\nYo no.\nYo no suscribo.\nYo no conozco al gato.\nTodo lo sé, la vida y su archipiélago,\nel mar y la ciudad incalculable,\nla botánica,\nel gineceo con sus extravíos,\nel por y el menos de la matemática,\nlos embudos volcánicos del mundo,\nla cáscara irreal del cocodrilo,\nla bondad ignorada del bombero,\nel atavismo azul del sacerdote,\npero no puedo descifrar un gato.\nMi razón resbaló en su indiferencia,\nsus ojos tienen números de oro.",
     "link": "",
     "priority": "High",
     "timeToFinish": "00:20",
     "createdAt": "24 November 2022 at 12:08",
-    "status": "inactive",
+    "active": false,
     "id": "e6d3c387-8b32-40b4-9781-072ba8cf3399"
   },
   {
@@ -36,47 +39,30 @@
     "priority": "Medium",
     "timeToFinish": "03:02",
     "createdAt": "24 November 2022 at 12:08",
-    "status": "inactive",
-    "id": "d9828f75-aad3-46c9-8277-9e2d96627ba8"
+    "active": false,
+    "id": "d9828f75-aad3-46c9-8277-9e2d96627ba8",
+    "activeSince": "12 December 2022 at 14:32"
   },
   {
-    "title": "Clean the dishes",
-    "description": "Puaj!",
-    "link": "",
-    "priority": "Low",
-    "timeToFinish": "00:20",
-    "createdAt": "24 November 2022 at 12:08",
-    "status": "inactive",
-    "id": "148ecf86-0e6d-4e56-85f2-9fe7f87f8f6b"
-  },
-  {
-    "title": "Make dinner",
-    "description": "Maybe pasta.\n\n\n\n\n\n\n\n\n\nMaybe no.",
-    "link": "",
-    "priority": "Low",
-    "timeToFinish": "00:20",
-    "createdAt": "24 November 2022 at 12:08",
-    "status": "inactive",
-    "id": "d46a72d5-c8f7-40db-a545-a42341fd88d9"
-  },
-  {
-    "title": "Eat the pasta",
+    "title": "Hike",
     "description": "",
     "link": "",
     "priority": "Low",
     "timeToFinish": "00:20",
-    "createdAt": "24 November 2022 at 12:08",
-    "status": "inactive",
-    "id": "eb9450fa-d94a-4436-8fe1-94615c81cc20"
+    "createdAt": "12 December 2022 at 12:15",
+    "active": false,
+    "id": "101b80f4-f13e-476a-813c-19c1a5cc7c06",
+    "activeSince": "12 December 2022 at 14:25"
   },
   {
-    "title": "dsadas",
+    "activeSince": "12 December 2022 at 14:32",
+    "title": "Eat pasta",
     "description": "",
     "link": "",
     "priority": "Low",
     "timeToFinish": "00:20",
-    "createdAt": "1 December 2022 at 16:31",
-    "status": "inactive",
-    "id": "9e710e44-d38b-4347-9668-145339c0f324"
+    "createdAt": "12 December 2022 at 12:27",
+    "active": false,
+    "id": "ce62d529-3292-4b52-893a-ac382ce691e4"
   }
 ]
