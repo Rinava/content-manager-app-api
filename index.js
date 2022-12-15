@@ -1,3 +1,4 @@
+const { sortByPriority } = require('./utils.js');
 const express = require('express');
 const app = express();
 const PORT = 3001;
@@ -17,7 +18,7 @@ app.get('/', (req, res) => {
 app.get('/api/resources', (req, res) => {
   const resources = getResources();
   const resourcesToDo = resources.filter((resource) => !resource.done);
-  res.send(resourcesToDo);
+  res.send(sortByPriority(resourcesToDo, 1));
 });
 
 app.get('/api/resources/done', (req, res) => {
@@ -46,6 +47,15 @@ app.post('/api/resources', (req, res) => {
     timeStyle: 'short',
     dateStyle: 'long',
   });
+  if (newResource.deadline) {
+    newResource.deadline = new Date(newResource.deadline).toLocaleString(
+      'en-GB',
+      {
+        timeStyle: 'short',
+        dateStyle: 'short',
+      }
+    );
+  }
   if (
     newResource.link.lenght > 0 &&
     (!newResource.link.startsWith('http') ||
