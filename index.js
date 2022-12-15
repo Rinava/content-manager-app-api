@@ -16,7 +16,14 @@ app.get('/', (req, res) => {
 
 app.get('/api/resources', (req, res) => {
   const resources = getResources();
-  res.send(resources);
+  const resourcesToDo = resources.filter((resource) => !resource.done);
+  res.send(resourcesToDo);
+});
+
+app.get('/api/resources/done', (req, res) => {
+  const resources = getResources();
+  const doneResources = resources.filter((resource) => resource.done === true);
+  res.send(doneResources);
 });
 
 app.get('/api/resources/:id', (req, res) => {
@@ -79,12 +86,6 @@ app.put('/api/resources/:id', (req, res) => {
       const activeIndex = resources.indexOf(activeResource);
       resources[activeIndex] = { ...activeResource, active: false };
     }
-    resources[index] = {
-      activeSince: new Date().toLocaleString('en-GB', {
-        timeStyle: 'short',
-        dateStyle: 'long',
-      }),
-    };
   }
 
   resources[index] = { ...resources[index], ...req.body };
